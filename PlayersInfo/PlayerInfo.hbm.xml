@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="PlayersInfo"
+                   namespace="PlayersInfo">
+	<class name="PlayersInfo.Player">
+		<id name="Id">
+			<generator class="native"/>
+		</id>
+		<property name="PlayerName" column ="PlayerName"/>
+		<property name="PlayerAge" column ="PlayerAge"/>
+		<property name="DOJ" column="DOJ"/>
+		<property name="BelongsTo" column="BelongsTo"/>
+	</class>
+</hibernate-mapping>
